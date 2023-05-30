@@ -19,4 +19,10 @@ public class PresentialEmployee extends Employee{
 		
 		return (hours*pricePerHour)+fuelPrice;
 	}
+	
+	@Deprecated
+	public int calculateFuel(int fuelPrice, int litres) {
+		
+		return fuelPrice*litres;
+	}
 }
