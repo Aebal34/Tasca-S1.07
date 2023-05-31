@@ -4,7 +4,7 @@ import java.io.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-@JsonSerialization(directory = "D:\\eclipse-workspace\\S1_07\\src\\n2exercici1")
+@JsonSerialization(directory = "D:\\eclipse-workspace\\S1_07\\src\\n3exercici1")
 public class Customer implements Serializable{
 
 	//ATTRIBUTES

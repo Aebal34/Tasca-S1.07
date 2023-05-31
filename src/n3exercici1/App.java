@@ -1,6 +1,7 @@
 package n3exercici1;
 
 import java.io.IOException;
+import java.lang.annotation.Annotation;
 
 public class App {
 
@@ -25,6 +26,14 @@ public class App {
 			System.out.println(e.getMessage());
 		}
 		
+		//We get the annotation attribute using reflection
+		Annotation[] annotations = Customer.class.getAnnotations();
 		
+		for(Annotation annotation : annotations) {
+			if(annotation instanceof JsonSerialization) {
+				JsonSerialization jsonS = (JsonSerialization)annotation;
+				System.out.println(jsonS.directory());
+			}
+		}
 	}
 }
